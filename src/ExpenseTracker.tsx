@@ -25,7 +25,7 @@ const ExpenseTracker: React.FC = () => {
 
     const fetchExpenses = async () => {
         try {
-            const response = await fetch("http://adres-twojego-backendu/api/expenses");
+            const response = await fetch("http://localhost:3000");
             const data = await response.json();
             setExpenses(data);
         } catch (error) {
